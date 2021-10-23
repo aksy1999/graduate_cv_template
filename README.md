@@ -1,7 +1,8 @@
 # graduate_cv_template
 
 **Why this GitRepo exists?**
-Hi, I am Amit Yadav, I applied for PhD in ECE for Fall 2021 Graduate Applications in USA. 
+
+Hi, I am Amit Yadav, I applied for PhD in ECE for Fall 2021 Graduate applications in USA. 
 This repository is made as a easy way to share latex templated of my graduate school application CV. 
 This CV helped me to get admits from UCSD, UCSB, Purdue, UMichigan. I also heard from UT Austin. I think it's a decent and balanced template. I got positive response from majority of graduate schools, I applied to. 
 
