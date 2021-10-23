@@ -1,0 +1,145 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{profile}
+\name{Amit Kumar Singh}{Yadav}
+\position{ Image Processing  {\enskip\cdotp\enskip} Systems and Controls {\enskip\cdotp\enskip}Robotics {\enskip\cdotp\enskip}Interaction{\enskip\cdotp\enskip}Deep Learning}
+%\address{}
+
+\mobile{(+91) 7985054878}
+\email{amit.y@alumni.iitgn.ac.in}
+\homepage{sites.google.com/view/amit-yadav}
+%\github{posquit0}
+\linkedin{amit-kumar-singh-yadav}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+%\quote{``Be the change that you want to see in the world."}
+
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = red,
+            citecolor = red,
+            anchorcolor = red]{hyperref}
+
+\newcommand{\MYhref}[3][red]{\href{#2}{\color{#1}{#3}}}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R] 
+\\ 
+\\
+%\begin{cvparagraph}
+% \hspace{4cm} \textbf{Resume} --- \textbf{Master of Science in Computer Science} --- \textbf{Georgia Institute of Technology}
+%\end{cvparagraph}
+\vspace{-1cm}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+%   {\today}
+{}
+  {Amit Kumar Singh Yadav~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/summary.tex}
+\input{resume/education.tex}
+\vspace{-0.3cm}
+\input{resume/publication.tex}
+\vspace{-0.3cm}
+\input{resume/honors.tex}
+\vspace{-0.3cm}
+\input{resume/experience.tex}
+\vspace{-0.3cm}
+\input{resume/responsibility.tex}
+\vspace{-0.3cm}
+% \vspace{-0.4cm}
+% \newpage
+% \vspace{-0.3cm}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\input{resume/projects.tex}
+\ihead*{\hfill Curriculum Vitae, Amit Kumar Singh Yadav, PhD in Robotics, UM ID # 51804587,  Page \pagemark \ of 4}
+\begin{cvparagraph} \textbf{Note:} Experiences include full‑time commitment of min 40 hours/week; projects require a commitment of about 12 hours/week  \end{cvparagraph}
+\vspace{-0.3cm}
+\input{resume/short-term-projects.tex}
+% \input{resume/organizations.tex}
+% \input{resume/responsibility.tex}
+% \newpage
+%\vspace{-0.2cm}
+\input{resume/skills.tex}
+\vspace{-0.3cm}
+\input{resume/course.tex}
+\vspace{-0.3cm}
+\input{resume/social.tex}
+%-------------------------------------------------------------------------------
+\end{document}
